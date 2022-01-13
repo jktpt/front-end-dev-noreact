@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Quicksand:wght@500&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    width: 100%;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.nav-space{
+    width: 85%;
+    display:flex;
+    justify-content: space-between;
+}
+.nav-brand-text{
+    color: white;
+    font-family: 'Moon Dance', cursive;
+    font-size: 40px;
+}
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav-margin{
+    margin-right: 50px;
+}
+.nav-text-space-between{
+    color: white;
+    list-style-type: none;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.toggle{
+    position: absolute;
+    top: 20px;
+    right:30px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.bind{
+    display: none;
+}
+/* Body */
+.container-body{
+    width: 100%;
+    height: 93.5vh;
+}
+.body-box{
+    width: 100%;
+    height: 50%;
+    top: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.body-box-left{
+    font-size: 40px;
+    width: 700px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+}
+.body-box-right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15%;
+}
+.box-right-black{
+    color: white;
+    width: 13rem;
+    height: 10rem;
+    background-color: rgb(39, 41, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 1px solid white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    opacity: 0.4;
+}
+.body-top-flex{
+    display: flex;
+    flex-direction: row;
+}
+.image-1{
+    background-image: url(/front-end-dev-noreact/photo/photo-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-2{
+    background-image: url(/front-end-dev-noreact/photo/photo-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-3{
+    background-image: url(/front-end-dev-noreact/photo/photo-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-4{
+    background-image: url(/front-end-dev-noreact/photo/photo-04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-5{
+    background-image: url(/front-end-dev-noreact/photo/photo-05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-6{
+    background-image: url(/front-end-dev-noreact/photo/photo-06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.active{
+    opacity: 1;
+}
+
+
+@media (max-width:900px){
+    .bind{
+        display: block;
+    }
+    .nav-binds{
+        display: none;
+    }
+}
